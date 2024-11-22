@@ -1,0 +1,86 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Escola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="school-name">Colégio Estadual Padre Cláudio Morelli</h1>
+            <!-- Menu de navegação para seções -->
+            <nav class="sections-nav">
+                <ul>
+                    <li><a href="#history">História da Escola</a></li>
+                    <li><a href="#manna-roosters">Manna Roosters</a></li>
+                    <li><a href="#media">Mídia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de História da Escola -->
+    <section class="history" id="history">
+        <div class="container">
+            <h2 class="history-title">O colégio</h2>
+            <div class="history-content">
+                <img src="foto.jpg" alt="Imagem do Colégio" class="history-image">
+                <p>O bairro do Umbará, localizado em um dos pontos mais distantes da cidade de Curitiba, foi inicialmente uma colônia de imigrantes italianos formada no ano de 1887. Isolado devido à distância e ao acesso extremamente difícil por causa das estradas ruins e da lama, o bairro desenvolveu uma maneira própria de ser, agir e pensar, o que definiu seus moradores com uma identidade muito única e singular. Fundado em 1912, como uma escola paroquial das Irmãs do Sagrado Coração de Jesus, o Colégio Padre Cláudio Morelli passou a representar, através de sua cultura escolar, um local de formação e manutenção dessa identidade chamada Umbaraense. Uma instituição escolar reflete não apenas as leis, normas, teorias pedagógicas em vigor, mas também representa uma cultura escolar própria, diretamente relacionada ao ambiente em que está inserida e do qual faz parte.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Manna Roosters -->
+    <section class="manna-roosters" id="manna-roosters">
+        <div class="container">
+            <h2>Manna Roosters</h2>
+            <p>A equipe Roosters participa da FIRST Robotics Competition (FRC), fundada em 2017 pela Associação Internacional para Desenvolvimento Tecnológico (AIDTEC) como um projeto de extensão da Universidade Federal Tecnológica do Paraná (UTFPR) campus Medianeira. Começando com 10 alunos do Ensino Médio e 5 mentores acadêmicos, a equipe competiu pela primeira vez nos Estados Unidos em 2018, no Instituto Tecnológico de Rochester, Nova York. A Roosters teve sua primeira sede no Colégio Bertoni e em 2020 foi transferida para o Colégio Estadual Padre Cláudio Morelli, sua sede atual, onde naquele mesmo ano foram competir na Regional Los Angeles. Hoje, cerca de 50 alunos trabalham na equipe e passam suas tardes na Hen House (laboratório), buscando democratizar os valores da FIRST e inspirar jovens ao redor do mundo. - 16 de abril de 2024</p>
+        </div>
+    </section>
+
+    <!-- Seção de Mídia com Fotos e Vídeos -->
+    <section class="media" id="media">
+        <div class="container">
+            <h2>Mídia</h2>
+            <div class="media-gallery">
+                <div class="media-item">
+                    <img src="sala.jpeg" alt="Imagem 1" class="media-image" onclick="openModal('image1.jpg', 'Descrição da imagem 1')">
+                </div>
+                <div class="media-item">
+                    <img src="equipe.jpeg" alt="Imagem 2" class="media-image" onclick="openModal('image2.jpg', 'Descrição da imagem 2')">
+                </div>
+                <div class="media-item">
+                    <img src="robo.jpeg" alt="Imagem 3" class="media-image" onclick="openModal('nova-imagem.jpg', 'Descrição da nova imagem')">
+                </div>
+                <div class="media-item">
+                    <video controls onclick="openModal('video.mp4', 'Descrição do vídeo')">
+                        <source src="videoentr.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para visualização de imagens e vídeos -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-content" class="modal-content">
+            <img id="modal-image" src="" alt="">
+            <video id="modal-video" controls>
+                <source src="" type="video/mp4">
+            </video>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Colégio Estadual Padre Cláudio Morelli - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>                           
